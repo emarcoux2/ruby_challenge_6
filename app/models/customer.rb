@@ -4,4 +4,6 @@ class Customer < ApplicationRecord
   end
 
   has_one_attached :image
+
+  validates :full_name, :phone_number
 end
