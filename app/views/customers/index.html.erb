@@ -1,0 +1,11 @@
+<div class="has-text-centered">
+  <h1 class="title">All Customers</h1>
+</div>
+<div class="has-text-centered">
+  <%= link_to "View Alphabetical List", alphabetized_customers_path %>
+  <%= link_to "View Customers With No Email", customers_missing_email_path %>
+</div>
+
+<%= render @customers %>
+
+

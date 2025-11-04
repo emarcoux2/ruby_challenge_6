@@ -1,0 +1,25 @@
+<div class="columns is-fullheight">
+  <% if customer.image.present? %>
+    <div class="card column is-narrow">
+      <div class="card-image">
+        <figure class="image is-128x128">
+          <%= image_tag customer.image, class: "is-rounded" %>
+        </figure>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="column is-narrow">
+    <div class="card">
+      <div class="card-content">
+        <ul>
+          <li><strong>Full Name:</strong> <%= customer.full_name %></li>
+          <li><strong>Phone Number:</strong> <%= customer.phone_number %></li>
+          <li><strong>Email:</strong> <%= customer.email_address %></li>
+          <li><strong>Notes:</strong> <%= customer.notes %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
